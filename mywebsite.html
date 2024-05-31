@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Sito Web</title>
+    <style>
+        /* Imposta i margini e padding a zero per evitare spazi indesiderati */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Stile per la copertina */
+        .cover {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Copre l'intera altezza della finestra */
+            position: relative;
+            z-index: 1;
+        }
+
+        .cover-title {
+            font-family: 'Arial', sans-serif; /* Puoi sostituire 'Arial' con un altro font */
+            font-size: 3em; /* Regola la dimensione del font a piacere */
+            text-align: center;
+        }
+
+        /* Stile per il contenuto */
+        .content {
+            padding: 20px;
+            position: relative;
+            z-index: 0;
+        }
+
+        .content img {
+            width: 1024px; /* Regola la larghezza dell'immagine (es. 50%) */
+            height: 768px; /* Mantiene le proporzioni dell'immagine */
+            margin-top: 20px; /* Spazio tra il contenuto e l'immagine */
+        }
+
+        .content figcaption {
+            margin-top: 10px; /* Spazio tra l'immagine e la didascalia */
+            font-style: italic; /* Stile della didascalia */
+            font-size: 2.5em; /* Dimensione del font ingrandita */
+        }
+
+        @media (max-width: 768px) {
+            .cover-title {
+                font-size: 2em; /* Dimensione del font più piccola per schermi piccoli */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <h1 class="cover-title">What if?</h1>
+    </div>
+    <div class="content">
+        <body>
+  <h1>Alexandru Iancu Website Homepage</h1>
+  <p>
+  Ciao! Questo è il mio sito personale, al momento è ancora altamente un work in progress..
+  </p>
+
+  <h2>Content</h2>
+  <ul>
+    <li><a href="about/about.html">About Me</a></li>
+    <li><a href="code/code.html">Code Projects</a></li>
+    <li><a href="links/links.html">Reading List and Comments</a></li>
+  </ul>
+  <figure>
+    <img src="C:\Users\Alex\Downloads\squadracesenatico.jpg" alt="La mia squadra di matematica con cui siamo andati alle finali">
+    <figcaption>La mia squadra di matematica con cui siamo andati alle finali</figcaption>
+    <img src="C:\Users\Alex\Downloads\concentrazionecesenatico.jpg" alt="momento di concentrazione..">
+    <figcaption>"Un momento di concentrazione intensa.. =)"</figcaption>
+  </figure>
+    </div>
+</body>
+</html>
